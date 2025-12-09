@@ -1,0 +1,103 @@
+/* Light Theme (default) */
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+  --border-color: #dee2e6;
+  --card-bg: #ffffff;
+  --input-bg: #ffffff;
+  --input-border: #ced4da;
+  --navbar-bg: #f8f9fa;
+  --navbar-text: #212529;
+  --primary-color: #007bff;
+  --secondary-color: #6c63ff;
+  --accent-color: #ff4081;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+}
+
+/* Dark Theme */
+.dark-theme {
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --border-color: #333333;
+  --card-bg: #1e1e1e;
+  --input-bg: #2a2a2a;
+  --input-border: #333333;
+  --navbar-bg: #1e1e1e;
+  --navbar-text: #ffffff;
+  --primary-color: #4f8df9;
+  --secondary-color: #6c63ff;
+  --accent-color: #ff4081;
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --danger-color: #f44336;
+}
+
+/* Apply theme variables */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: var(--navbar-bg) !important;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .nav-link {
+  color: var(--navbar-text) !important;
+}
+
+/* Card styling */
+.card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+.card-body {
+  color: var(--text-primary);
+}
+
+/* Form controls */
+.form-control {
+  background-color: var(--input-bg);
+  border-color: var(--input-border);
+  color: var(--text-primary);
+}
+
+.form-control:focus {
+  background-color: var(--input-bg);
+  color: var(--text-primary);
+}
+
+/* Buttons */
+.btn-outline-secondary {
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+/* Tables */
+.table {
+  color: var(--text-primary);
+}
+
+/* Dropdowns */
+.dropdown-menu {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+.dropdown-item {
+  color: var(--text-primary);
+}
+
+.dropdown-item:hover {
+  background-color: var(--bg-secondary);
+}
