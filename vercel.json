@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "installCommand": "cd ecommerce-app && npm install",
+  "buildCommand": "cd ecommerce-app && npm run build:prod",
+  "outputDirectory": "ecommerce-app/dist/ecommerce-app/browser",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+
